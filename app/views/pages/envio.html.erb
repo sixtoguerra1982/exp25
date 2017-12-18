@@ -1,0 +1,29 @@
+<h1>Pages#envio</h1>
+<p>Find me in app/views/pages/envio.html.erb</p>
+
+
+
+
+
+
+<form action="<%= pages_recibo_path %>" method="GET">
+ 	<input type="text" name="cod">
+ 	<input type="text" name="detail">
+ 	<input type="text" name="category">
+ 	<input type="text" name="value">
+ 	<input type="text" name="discount">
+ 	<input type="text" name="tax">
+ 	<input type="text" name="total">
+ 	<input type="submit">
+</form>
+
+
+
+<!-- cod (integer) => código de la venta
+detail (string) => detalle de la venta
+category (integer) => categoría de la venta (ingreso manual)
+value (integer) => valor de la venta
+discount (integer) => porcentaje de descuento aplicado de (1-100).
+tax (integer) => porcentaje correspondiente al IVA.
+total (float) => total de la venta después de aplicado descuento e
+impuesto. -->
